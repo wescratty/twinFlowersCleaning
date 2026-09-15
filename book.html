@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Free Consultation | Twin Flowers Cleaning</title>
+<meta name="description" content="Book a free consultation with Twin Flowers Cleaning. Tell us about your home or rental and we'll get back to you soon.">
+<link rel="canonical" href="https://www.twinflowerscleaning.com/book.html">
+<link rel="icon" type="image/png" href="assets/logo/twin-flowers-logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img class="logo" src="assets/logo/twin-flowers-logo.png" alt="Twin Flowers Cleaning Co. logo">
+      <span>
+        <span class="brand-name">Twin Flowers Cleaning</span>
+        <span class="brand-tagline">Bitterroot Valley &amp; Bozeman, MT</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="book.html" class="current">Book</a>
+      <a href="about.html">About</a>
+      <a href="join-the-team.html">Join the Team!</a>
+      <a href="book.html" class="header-cta">Book a Free Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-intro">
+  <div class="container">
+    <h1>We Look Forward to Hearing From You!</h1>
+    <p>Tell us a little about the service you're looking for and we will get back to you soon.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="contact-details" style="justify-content:flex-start;margin-bottom:20px;color:var(--text-muted);">
+      <a href="tel:+14062824418">&#128222; (406) 282-4418</a>
+      <span>Serving Hamilton, Stevensville, Corvallis, Victor, Florence &amp; Bozeman, MT</span>
+    </div>
+
+    <form class="inquiry" id="bookForm">
+      <input type="hidden" name="access_key" value="dd425d21-97e9-47b6-9bc2-ab919350729b">
+      <input type="hidden" name="subject" value="New booking request from twinflowerscleaning.com">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="first_name" required>
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="last_name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" inputmode="tel">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Tell us a little about the service you're looking for..."></textarea>
+      <p class="hint">If you'd prefer to talk over the phone, leave your number in the message box and we'll give you a call!</p>
+
+      <label for="source">How did you hear about us?</label>
+      <select id="source" name="how_did_you_hear" required>
+        <option value="" disabled selected>Select one&hellip;</option>
+        <option>Google search</option>
+        <option>Instagram/Facebook</option>
+        <option>NextDoor</option>
+        <option>Home &amp; Life Magazine</option>
+        <option>Word of mouth</option>
+        <option>Yelp</option>
+      </select>
+
+      <button type="submit" class="btn" id="bookSubmit">Submit</button>
+      <p id="bookResult" class="inquiry-result" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/logo/twin-flowers-logo.png" alt="Twin Flowers Cleaning Co. logo">
+      <p>Non-toxic, thorough cleaning for the Bitterroot Valley and Bozeman, Montana.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/twinflowers.cleaning/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61576843183667" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2a2 2 0 0 0-2 2v3H9v3h2v6h3v-6h2.5l.5-3h-3v-2a1 1 0 0 1 1-1h2Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+14062824418">(406) 282-4418</a></li>
+        <li><a href="mailto:twinflowerscleaning@gmail.com">twinflowerscleaning@gmail.com</a></li>
+        <li><a href="book.html">Book a consultation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join-the-team.html">Join the Team</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Service Areas</h4>
+      <ul>
+        <li>Hamilton &amp; the Bitterroot Valley</li>
+        <li>Bozeman</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; Twin Flowers Cleaning Co. &mdash; Serving the Bitterroot Valley and Bozeman, Montana</div>
+</footer>
+
+<script>
+  const bookForm = document.getElementById("bookForm");
+  const bookResult = document.getElementById("bookResult");
+  const bookSubmit = document.getElementById("bookSubmit");
+  const phoneField = document.getElementById("phone");
+  phoneField.addEventListener("input", () => {
+    phoneField.value = phoneField.value.replace(/[^0-9()+\-.\s]/g, "");
+  });
+
+  bookForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    bookSubmit.disabled = true;
+    bookResult.textContent = "Sending…";
+    bookResult.className = "inquiry-result";
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(bookForm))),
+      });
+      const data = await res.json();
+      if (data.success) {
+        bookResult.textContent = "Thanks! We'll be in touch soon.";
+        bookResult.className = "inquiry-result success";
+        bookForm.reset();
+      } else {
+        throw new Error(data.message || "Something went wrong");
+      }
+    } catch (err) {
+      bookResult.textContent = "Sorry, something went wrong. Please call or text us instead.";
+      bookResult.className = "inquiry-result error";
+    } finally {
+      bookSubmit.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>

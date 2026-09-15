@@ -1,0 +1,11 @@
+// Cloudflare Workers config for this static site -- the whole repo root is
+// served as static assets (index.html, css/, assets/, etc). No Worker
+// script, just a directory of files. Required by Cloudflare's Git-connected
+// build even for a pure static-assets deploy.
+{
+  "name": "twin-flowers-cleaning-website",
+  "compatibility_date": "2026-09-15",
+  "assets": {
+    "directory": "."
+  }
+}
