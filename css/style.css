@@ -143,18 +143,24 @@ h1, h2.section-title, .cta-band h2, .page-intro h1 {
 /* Hero */
 .hero {
   background: linear-gradient(180deg, var(--cream) 0%, #e3e0e9 100%);
-  padding: 70px 0 80px;
+  padding: 24px 0;
   text-align: center;
 }
 .hero-panel {
   background: #c8c2cb;
-  max-width: 640px;
-  margin: 60px auto 0;
-  padding: 44px 40px;
+  width: 92%;
+  max-width: 1040px;
+  min-height: 72vh;
+  margin: 0 auto;
+  padding: 50px 40px;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero-logo {
-  height: 84px;
+  height: 250px;
   width: auto;
   margin: 0 auto 20px;
 }
@@ -395,6 +401,6 @@ form.inquiry button { margin-top: 20px; }
   .site-header .container { justify-content: center; text-align: center; }
   .main-nav { justify-content: center; }
   .brand { flex-wrap: wrap; justify-content: center; }
-  .hero-panel { margin-top: 30px; padding: 32px 22px; }
-  .hero-logo { height: 64px; }
+  .hero-panel { margin-top: 20px; padding: 32px 22px; min-height: 0; width: 94%; }
+  .hero-logo { height: 130px; }
 }
