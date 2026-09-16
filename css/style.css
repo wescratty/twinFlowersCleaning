@@ -1,5 +1,7 @@
 /* Twin Flowers Cleaning — site stylesheet */
 
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap');
+
 :root {
   --cream: #f6f1e6;
   --cream-dark: #ece4d0;
@@ -24,7 +26,7 @@ html, body {
 }
 
 body {
-  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Bitter", "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
   color: var(--ink);
   background: var(--cream);
   line-height: 1.6;
@@ -113,13 +115,13 @@ h1, h2.section-title, .cta-band h2, .page-intro h1 {
 .main-nav a.current { color: var(--lavender-dark); }
 
 .header-cta {
-  background: var(--sage);
+  background: #5c5751;
   color: #fff !important;
   padding: 9px 18px !important;
   border-radius: 4px;
   font-weight: 700 !important;
 }
-.header-cta:hover { background: var(--sage-dark) !important; }
+.header-cta:hover { background: #45413c !important; }
 
 /* Home hero viewport */
 .home-hero-viewport {
@@ -143,6 +145,18 @@ h1, h2.section-title, .cta-band h2, .page-intro h1 {
   background: linear-gradient(180deg, var(--cream) 0%, #e3e0e9 100%);
   padding: 70px 0 80px;
   text-align: center;
+}
+.hero-panel {
+  background: #c8c2cb;
+  max-width: 640px;
+  margin: 60px auto 0;
+  padding: 44px 40px;
+  border-radius: 16px;
+}
+.hero-logo {
+  height: 84px;
+  width: auto;
+  margin: 0 auto 20px;
 }
 .hero-eyebrow {
   font-size: 0.8rem;
@@ -179,6 +193,8 @@ h1, h2.section-title, .cta-band h2, .page-intro h1 {
   cursor: pointer;
 }
 .btn:hover { background: var(--sage-dark); text-decoration: none; color: #fff; }
+.btn-consult { background: #5c5751; }
+.btn-consult:hover { background: #45413c; }
 .btn-outline {
   background: transparent;
   border: 2px solid var(--lavender);
@@ -379,4 +395,6 @@ form.inquiry button { margin-top: 20px; }
   .site-header .container { justify-content: center; text-align: center; }
   .main-nav { justify-content: center; }
   .brand { flex-wrap: wrap; justify-content: center; }
+  .hero-panel { margin-top: 30px; padding: 32px 22px; }
+  .hero-logo { height: 64px; }
 }
