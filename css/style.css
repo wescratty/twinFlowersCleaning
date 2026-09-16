@@ -123,6 +123,35 @@ h1, h2.section-title, .cta-band h2, .page-intro h1 {
 }
 .header-cta:hover { background: #45413c !important; }
 
+/* Nav dropdown (Service Areas) */
+.nav-dropdown { position: relative; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+  min-width: 190px;
+  padding: 6px;
+  z-index: 60;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  display: block;
+}
+.nav-dropdown-menu a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.nav-dropdown-menu a:hover { background: var(--cream-dark); text-decoration: none; }
+
 /* Home hero viewport */
 .home-hero-viewport {
   display: flex;
@@ -248,6 +277,17 @@ h2.section-title {
 .card-body h3 { margin: 0 0 8px; font-family: Georgia, serif; font-weight: 400; font-size: 1.25rem; color: var(--ink); }
 .card-body p { color: var(--text-muted); font-size: 0.98rem; flex: 1; }
 
+a.card {
+  color: inherit;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+a.card:hover {
+  text-decoration: none;
+  border-color: var(--sage);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
 /* Photo gallery */
 .gallery {
   display: grid;
@@ -321,6 +361,8 @@ form.inquiry input, form.inquiry textarea, form.inquiry select {
 }
 form.inquiry .hint { color: var(--text-muted); font-size: 0.88rem; margin: 6px 0 0; }
 form.inquiry button { margin-top: 20px; }
+.required-asterisk { color: #c0392b; margin-left: 3px; }
+.required-note { font-weight: 400; font-size: 0.8em; color: var(--text-muted); margin-left: 4px; }
 .inquiry-result { margin-top: 14px; font-weight: 700; text-align: center; min-height: 1.2em; }
 .inquiry-result.success { color: #2e7d32; }
 .inquiry-result.error { color: #b3261e; }
@@ -391,6 +433,27 @@ form.inquiry button { margin-top: 20px; }
   font-size: 0.82rem;
   color: #8c8d97;
 }
+
+/* Map frame (service area maps) */
+.map-frame {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+}
+.map-frame img { width: 100%; height: auto; display: block; }
+
+/* Service areas page */
+.area-section {
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.area-section:nth-child(even) { background: var(--cream-dark); }
 
 /* Breadcrumb / page intro (non-hero pages) */
 .page-intro {

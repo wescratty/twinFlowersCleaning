@@ -1,0 +1,97 @@
+<svg viewBox="0 0 820 620" width="820" height="620" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .kicker { font-family: Georgia, serif; font-size: 13px; letter-spacing: 4px; fill: #4a5a45; }
+      .title { font-family: Georgia, serif; font-size: 38px; fill: #33402f; }
+      .subtitle { font-style: italic; font-size: 15px; fill: #55604c; }
+      .state-label { font-size: 15px; letter-spacing: 3px; fill: #6b7566; }
+      .town-label { font-size: 14px; fill: #33402f; }
+      .town-label-bold { font-size: 17px; fill: #33402f; font-weight: bold; }
+      .legend-title { font-size: 17px; fill: #33402f; font-weight: bold; }
+      .legend-item { font-size: 13px; fill: #3d4a3a; }
+      .brand-foot { font-size: 11px; letter-spacing: 3px; fill: #6b7566; }
+      .mtn { fill: none; stroke: #9aa48f; stroke-width: 1.3; stroke-linejoin: round; opacity: 0.55; }
+      .road { fill: none; stroke: #8c8577; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="620" fill="#f5f1e7"/>
+
+  <!-- Header -->
+  <text x="410" y="34" text-anchor="middle" class="kicker">TWIN FLOWERS CLEANING</text>
+  <text x="410" y="80" text-anchor="middle" class="title">Bozeman, MT &amp; Surrounding Areas</text>
+
+  <line x1="290" y1="101" x2="345" y2="101" stroke="#6b7566" stroke-width="1"/>
+  <g transform="translate(410,101)">
+    <path d="M0,-7 C3,-4 3,4 0,7 C-3,4 -3,-4 0,-7 Z" fill="#6b7566"/>
+    <path d="M-7,0 C-4,-3 4,-3 7,0 C4,3 -4,3 -7,0 Z" fill="#6b7566"/>
+    <circle r="2.3" fill="#f5f1e7"/>
+  </g>
+  <line x1="475" y1="101" x2="530" y2="101" stroke="#6b7566" stroke-width="1"/>
+
+  <text x="410" y="128" text-anchor="middle" class="subtitle">Proudly serving Bozeman and Belgrade, Montana.</text>
+
+  <!-- ===================== MAP ===================== -->
+  <g>
+    <clipPath id="bznMapClip">
+      <rect x="30" y="150" width="540" height="380"/>
+    </clipPath>
+
+    <g clip-path="url(#bznMapClip)">
+      <!-- Bridger Range mountain sketches (north) -->
+      <path class="mtn" d="M 80,190 L 98,164 L 114,186 L 132,156 L 150,182 L 168,160 L 186,184 L 204,158 L 222,182"/>
+      <path class="mtn" d="M 90,220 L 108,196 L 124,216 L 142,190 L 160,214 L 178,192 L 196,216"/>
+      <path class="mtn" d="M 300,200 L 318,174 L 334,196 L 352,166 L 370,192"/>
+      <path class="mtn" d="M 310,230 L 328,206 L 344,226 L 362,200 L 380,224"/>
+
+      <!-- Gallatin Valley shaded service area -->
+      <ellipse cx="310" cy="330" rx="190" ry="105" fill="#a8bcc4" fill-opacity="0.55" stroke="#7f97a0" stroke-width="1.2"/>
+
+      <!-- I-90 connecting Belgrade to Bozeman -->
+      <path class="road" d="M 190,330 C 240,332 290,334 350,335"/>
+
+      <!-- MONTANA label -->
+      <text x="470" y="185" text-anchor="middle" class="state-label">MONTANA</text>
+
+      <!-- Belgrade marker -->
+      <g transform="translate(190,330)">
+        <path d="M0,-7 L2.1,-2.1 L7,-2.1 L3.1,1.2 L4.7,7 L0,3.7 L-4.7,7 L-3.1,1.2 L-7,-2.1 L-2.1,-2.1 Z" fill="#33402f"/>
+        <text x="-12" y="4" text-anchor="end" class="town-label">Belgrade</text>
+      </g>
+
+      <!-- Bozeman marker (hub, bold) -->
+      <g transform="translate(350,335)">
+        <path d="M0,-10 L3,-3 L10,-3 L4.5,1.7 L6.7,10 L0,5.3 L-6.7,10 L-4.5,1.7 L-10,-3 L-3,-3 Z" fill="#2a3527"/>
+        <text x="16" y="5" class="town-label-bold">Bozeman</text>
+      </g>
+    </g>
+
+    <!-- map frame -->
+    <rect x="30" y="150" width="540" height="380" fill="none" stroke="#c9c2ae" stroke-width="1"/>
+
+    <!-- Compass rose -->
+    <g transform="translate(75,562)">
+      <circle r="28" fill="none" stroke="#6b7566" stroke-width="1"/>
+      <path d="M0,-22 L4.5,0 L0,22 L-4.5,0 Z" fill="#4a5a45"/>
+      <path d="M-22,0 L0,-4.5 L22,0 L0,4.5 Z" fill="#8a9a78"/>
+      <text x="0" y="-30" text-anchor="middle" font-size="11" fill="#4a5a45">N</text>
+      <text x="0" y="39" text-anchor="middle" font-size="11" fill="#4a5a45">S</text>
+    </g>
+  </g>
+
+  <!-- ===================== LEGEND ===================== -->
+  <g transform="translate(592,205)">
+    <circle cx="10" cy="0" r="9" fill="#a8bcc4"/>
+    <text x="28" y="5" class="legend-title">Bozeman</text>
+
+    <text x="4" y="34" class="legend-item">&#9733; Service Area Includes:</text>
+    <text x="18" y="58" class="legend-item">&#8226; Bozeman</text>
+    <text x="18" y="78" class="legend-item">&#8226; Belgrade</text>
+
+    <line x1="0" y1="110" x2="150" y2="110" stroke="#c9c2ae" stroke-width="1"/>
+    <text x="0" y="140" font-style="italic" font-size="14" fill="#4a5a45">Same great service.</text>
+    <text x="0" y="160" font-style="italic" font-size="14" fill="#4a5a45">Right in the Gallatin Valley.</text>
+
+    <text x="0" y="210" class="brand-foot">TWIN FLOWERS CLEANING</text>
+  </g>
+</svg>

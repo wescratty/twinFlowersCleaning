@@ -1,0 +1,142 @@
+<svg viewBox="0 0 820 700" width="820" height="700" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .kicker { font-family: Georgia, serif; font-size: 13px; letter-spacing: 4px; fill: #4a5a45; }
+      .title { font-family: Georgia, serif; font-size: 38px; fill: #33402f; }
+      .subtitle { font-style: italic; font-size: 15px; fill: #55604c; }
+      .state-label { font-size: 15px; letter-spacing: 3px; fill: #6b7566; }
+      .town-label { font-size: 14px; fill: #33402f; }
+      .town-label-bold { font-size: 16px; fill: #33402f; font-weight: bold; }
+      .legend-title { font-size: 17px; fill: #33402f; font-weight: bold; }
+      .legend-item { font-size: 13px; fill: #3d4a3a; }
+      .brand-foot { font-size: 11px; letter-spacing: 3px; fill: #6b7566; }
+      .mtn { fill: none; stroke: #9aa48f; stroke-width: 1.3; stroke-linejoin: round; opacity: 0.55; }
+      .road { fill: none; stroke: #8c8577; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="820" height="700" fill="#f5f1e7"/>
+
+  <!-- Header -->
+  <text x="410" y="34" text-anchor="middle" class="kicker">TWIN FLOWERS CLEANING</text>
+  <text x="410" y="80" text-anchor="middle" class="title">Bitterroot Valley &amp; Surrounding Areas</text>
+
+  <line x1="255" y1="101" x2="345" y2="101" stroke="#6b7566" stroke-width="1"/>
+  <g transform="translate(410,101)">
+    <path d="M0,-7 C3,-4 3,4 0,7 C-3,4 -3,-4 0,-7 Z" fill="#6b7566"/>
+    <path d="M-7,0 C-4,-3 4,-3 7,0 C4,3 -4,3 -7,0 Z" fill="#6b7566"/>
+    <circle r="2.3" fill="#f5f1e7"/>
+  </g>
+  <line x1="475" y1="101" x2="565" y2="101" stroke="#6b7566" stroke-width="1"/>
+
+  <text x="410" y="128" text-anchor="middle" class="subtitle">Proudly serving Darby, Hamilton, Corvallis, Victor, Stevensville, Florence &amp; Lolo.</text>
+
+  <!-- ===================== MAP ===================== -->
+  <g>
+    <clipPath id="brvMapClip">
+      <rect x="30" y="150" width="540" height="510"/>
+    </clipPath>
+
+    <g clip-path="url(#brvMapClip)">
+      <!-- mountain sketches: Bitterroots (west) -->
+      <path class="mtn" d="M 40,190 L 55,168 L 68,186 L 82,156 L 96,182 L 110,166 L 122,188"/>
+      <path class="mtn" d="M 44,230 L 58,210 L 72,228 L 86,206 L 100,226 L 114,208 L 128,228"/>
+      <path class="mtn" d="M 40,300 L 54,280 L 68,298 L 82,276 L 96,296"/>
+      <path class="mtn" d="M 44,370 L 58,350 L 72,368 L 86,346 L 100,366"/>
+      <path class="mtn" d="M 40,440 L 54,420 L 68,438 L 82,416 L 96,436"/>
+      <path class="mtn" d="M 44,510 L 58,490 L 72,508 L 86,486 L 100,506"/>
+      <path class="mtn" d="M 40,580 L 54,560 L 68,578 L 82,556 L 96,576"/>
+
+      <!-- mountain sketches: Sapphires (east) -->
+      <path class="mtn" d="M 470,200 L 484,180 L 498,198 L 512,176 L 526,196"/>
+      <path class="mtn" d="M 474,270 L 488,250 L 502,268 L 516,246 L 530,266"/>
+      <path class="mtn" d="M 470,340 L 484,320 L 498,338 L 512,316 L 526,336"/>
+      <path class="mtn" d="M 474,410 L 488,390 L 502,408 L 516,386 L 530,406"/>
+      <path class="mtn" d="M 470,480 L 484,460 L 498,478 L 512,456 L 526,476"/>
+      <path class="mtn" d="M 474,550 L 488,530 L 502,548 L 516,526 L 530,546"/>
+
+      <!-- Bitterroot Valley shaded service area -->
+      <path d="M 250,170 C 300,168 320,190 305,215 C 330,235 335,265 315,285
+               C 340,305 345,340 320,365 C 340,390 342,420 318,445
+               C 338,470 340,500 316,525 C 336,550 334,580 308,600
+               C 320,620 315,640 290,650 C 260,655 235,640 240,615
+               C 215,600 210,575 232,555 C 208,535 208,505 232,485
+               C 208,465 210,435 236,415 C 210,395 212,365 238,345
+               C 214,325 216,295 242,275 C 218,255 220,225 246,205
+               C 230,188 236,172 250,170 Z"
+            fill="#a9b596" fill-opacity="0.5" stroke="#8a9a78" stroke-width="1.2"/>
+
+      <!-- Road (Hwy 93) connecting the towns north to south -->
+      <path class="road" d="M 290,190 C 275,220 268,240 270,260 C 292,300 302,315 300,330
+               C 280,365 272,385 275,400 C 292,435 298,450 295,470
+               C 278,505 282,520 285,540 C 292,575 292,590 295,610"/>
+
+      <!-- MONTANA label -->
+      <text x="470" y="185" text-anchor="middle" class="state-label">MONTANA</text>
+
+      <!-- Town markers, north (Lolo) to south (Darby) -->
+      <g transform="translate(290,190)">
+        <path d="M0,-7 L2.1,-2.1 L7,-2.1 L3.1,1.2 L4.7,7 L0,3.7 L-4.7,7 L-3.1,1.2 L-7,-2.1 L-2.1,-2.1 Z" fill="#33402f"/>
+        <text x="12" y="4" class="town-label">Lolo</text>
+      </g>
+      <g transform="translate(270,260)">
+        <path d="M0,-7 L2.1,-2.1 L7,-2.1 L3.1,1.2 L4.7,7 L0,3.7 L-4.7,7 L-3.1,1.2 L-7,-2.1 L-2.1,-2.1 Z" fill="#33402f"/>
+        <text x="-12" y="4" text-anchor="end" class="town-label">Florence</text>
+      </g>
+      <g transform="translate(300,330)">
+        <path d="M0,-7 L2.1,-2.1 L7,-2.1 L3.1,1.2 L4.7,7 L0,3.7 L-4.7,7 L-3.1,1.2 L-7,-2.1 L-2.1,-2.1 Z" fill="#33402f"/>
+        <text x="12" y="4" class="town-label">Stevensville</text>
+      </g>
+      <g transform="translate(275,400)">
+        <path d="M0,-7 L2.1,-2.1 L7,-2.1 L3.1,1.2 L4.7,7 L0,3.7 L-4.7,7 L-3.1,1.2 L-7,-2.1 L-2.1,-2.1 Z" fill="#33402f"/>
+        <text x="-12" y="4" text-anchor="end" class="town-label">Victor</text>
+      </g>
+      <g transform="translate(295,470)">
+        <path d="M0,-7 L2.1,-2.1 L7,-2.1 L3.1,1.2 L4.7,7 L0,3.7 L-4.7,7 L-3.1,1.2 L-7,-2.1 L-2.1,-2.1 Z" fill="#33402f"/>
+        <text x="12" y="4" class="town-label">Corvallis</text>
+      </g>
+      <!-- Hamilton (hub, bold) -->
+      <g transform="translate(285,540)">
+        <path d="M0,-10 L3,-3 L10,-3 L4.5,1.7 L6.7,10 L0,5.3 L-6.7,10 L-4.5,1.7 L-10,-3 L-3,-3 Z" fill="#2a3527"/>
+        <text x="16" y="5" class="town-label-bold">Hamilton</text>
+      </g>
+      <g transform="translate(295,610)">
+        <path d="M0,-7 L2.1,-2.1 L7,-2.1 L3.1,1.2 L4.7,7 L0,3.7 L-4.7,7 L-3.1,1.2 L-7,-2.1 L-2.1,-2.1 Z" fill="#33402f"/>
+        <text x="12" y="4" class="town-label">Darby</text>
+      </g>
+    </g>
+
+    <!-- map frame -->
+    <rect x="30" y="150" width="540" height="510" fill="none" stroke="#c9c2ae" stroke-width="1"/>
+
+    <!-- Compass rose -->
+    <g transform="translate(75,624)">
+      <circle r="28" fill="none" stroke="#6b7566" stroke-width="1"/>
+      <path d="M0,-22 L4.5,0 L0,22 L-4.5,0 Z" fill="#4a5a45"/>
+      <path d="M-22,0 L0,-4.5 L22,0 L0,4.5 Z" fill="#8a9a78"/>
+      <text x="0" y="-30" text-anchor="middle" font-size="11" fill="#4a5a45">N</text>
+      <text x="0" y="39" text-anchor="middle" font-size="11" fill="#4a5a45">S</text>
+    </g>
+  </g>
+
+  <!-- ===================== LEGEND ===================== -->
+  <g transform="translate(592,205)">
+    <circle cx="10" cy="0" r="9" fill="#a9b596"/>
+    <text x="28" y="5" class="legend-title">Bitterroot Valley</text>
+
+    <text x="4" y="34" class="legend-item">&#9733; Service Area Includes:</text>
+    <text x="18" y="58" class="legend-item">&#8226; Lolo</text>
+    <text x="18" y="78" class="legend-item">&#8226; Florence</text>
+    <text x="18" y="98" class="legend-item">&#8226; Stevensville</text>
+    <text x="18" y="118" class="legend-item">&#8226; Victor</text>
+    <text x="18" y="138" class="legend-item">&#8226; Corvallis</text>
+    <text x="18" y="158" class="legend-item">&#8226; Hamilton</text>
+    <text x="18" y="178" class="legend-item">&#8226; Darby</text>
+
+    <line x1="0" y1="210" x2="150" y2="210" stroke="#c9c2ae" stroke-width="1"/>
+    <text x="0" y="240" font-style="italic" font-size="14" fill="#4a5a45">Non-toxic, thorough care</text>
+    <text x="0" y="260" font-style="italic" font-size="14" fill="#4a5a45">for the whole valley.</text>
+
+    <text x="0" y="310" class="brand-foot">TWIN FLOWERS CLEANING</text>
+  </g>
+</svg>
