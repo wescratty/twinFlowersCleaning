@@ -20,23 +20,20 @@
       </span>
     </a>
     <nav class="main-nav">
-      <div class="nav-left">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <div class="nav-dropdown">
-          <a href="service-areas.html">Service Areas</a>
-          <div class="nav-dropdown-menu">
-            <a href="service-areas.html#bitterroot-valley">Bitterroot Valley</a>
-            <a href="service-areas.html#missoula">Missoula</a>
-            <a href="service-areas.html#bozeman">Bozeman</a>
-          </div>
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a href="service-areas.html">Service Areas</a>
+        <div class="nav-dropdown-menu">
+          <a href="service-areas.html#bitterroot-valley">Bitterroot Valley</a>
+          <a href="service-areas.html#missoula">Missoula</a>
+          <a href="service-areas.html#bozeman">Bozeman</a>
         </div>
       </div>
+      <a href="services.html">Services</a>
+      <a href="book.html">Book</a>
+      <a href="about.html" class="current">About</a>
+      <a href="join-the-team.html">Join the Team!</a>
       <a href="book.html" class="header-cta">Book a Free Consultation</a>
-      <div class="nav-right">
-        <a href="about.html" class="current">About</a>
-        <a href="join-the-team.html">Join the Team!</a>
-      </div>
     </nav>
   </div>
 </header>
@@ -61,19 +58,27 @@
 <section class="alt">
   <div class="container">
     <h2 class="section-title">Client Testimonials</h2>
-    <p class="section-lede">Live reviews from our Google Business Profile.</p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+      <div class="testimonial">
+        <p class="quote">I recently started using Twin Flowers Cleaning for my home, and wow&mdash;I'm so impressed! Every time they come, the place sparkles. They're not only thorough and detail-oriented, but also so friendly and professional. Truly a five-star experience! Thank you</p>
+        <p class="author">&mdash; John Miller</p>
+      </div>
+      <div class="testimonial">
+        <p class="quote">Twin Flowers cleaned my two bathrooms and kitchen in July, helping me get ready for guests. They provided professional, detailed and thorough cleaning service. On a scale of 1-10 I give them a 10! They use products that are environmentally acceptable, reflecting my values and discovered areas of cleaning need I had not realized! I felt so comfortable and assured with Twin Flowers Cleaning. They come with my highest recommendation.</p>
+        <p class="author">&mdash; Nansu Roddy</p>
+      </div>
+      <div class="testimonial">
+        <p class="quote">I had them come and do a deep clean for me. They were very thorough. Everything shined and sparkled. I am now having them come on a regular schedule. It is so nice to have everything clean. Thank you Twin Flowers &#127805;</p>
+        <p class="author">&mdash; Joan Heusted</p>
+      </div>
+    </div>
     <!--
-      TODO: Google Reviews widget (Elfsight)
-      1. Create a free account at https://elfsight.com and add a "Google Reviews" widget.
-      2. Connect it to the Twin Flowers Cleaning Google Business Profile.
-      3. In the widget's layout settings, choose the carousel layout showing 3 reviews
-         at a time with left/right arrows, so new reviews appear automatically with no
-         further edits needed here.
-      4. Elfsight gives you a snippet like <div class="elfsight-app-XXXXXXXX...">.
-         Replace YOUR-WIDGET-ID below with that ID (just the part after "elfsight-app-").
+      Google Reviews widget (Elfsight): to replace the reviews above with live ones,
+      create a "Google Reviews" widget at https://elfsight.com, connect it to the
+      Google Business Profile, then swap the grid above for:
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-YOUR-WIDGET-ID" data-elfsight-app-lazy></div>
     -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-YOUR-WIDGET-ID" data-elfsight-app-lazy></div>
   </div>
 </section>
 
@@ -90,6 +95,12 @@
           <li class="carousel-slide"><figure><img src="assets/images/about/gallery-3.jpg" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
           <li class="carousel-slide"><figure><img src="assets/images/about/gallery-4.jpg" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
           <li class="carousel-slide"><figure><img src="assets/images/about/gallery-5.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-1.png" alt="A clean, tidy Montana ranch-style living room" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-2.jpeg" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-3.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-4.jpg" alt="A freshly mopped tile entryway" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-5.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-6.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
         </ul>
       </div>
       <button type="button" class="carousel-arrow carousel-arrow-right" aria-label="Next photo">&#8250;</button>

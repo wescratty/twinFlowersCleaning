@@ -2,8 +2,7 @@
   function visibleCount(root) {
     const width = window.innerWidth;
     if (width <= 640) return 1;
-    if (width <= 900) return 2;
-    return 3;
+    return 2;
   }
 
   function initCarousel(root) {
