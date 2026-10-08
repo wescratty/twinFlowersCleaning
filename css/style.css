@@ -321,9 +321,9 @@ a.card:hover {
   overflow: hidden;
 }
 .carousel-slide img {
-  aspect-ratio: 3 / 4;
-  object-fit: contain;
-  background: var(--cream-dark);
+  aspect-ratio: 776 / 1040;
+  object-fit: cover;
+  object-position: center;
   height: auto;
   width: 100%;
   display: block;
