@@ -303,6 +303,7 @@ a.card:hover {
 .carousel-track {
   display: flex;
   gap: 14px;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -320,8 +321,7 @@ a.card:hover {
   overflow: hidden;
 }
 .carousel-slide img {
-  aspect-ratio: 4/3;
-  object-fit: cover;
+  height: auto;
   width: 100%;
   display: block;
 }
