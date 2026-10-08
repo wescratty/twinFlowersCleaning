@@ -30,7 +30,6 @@
         </div>
       </div>
       <a href="services.html">Services</a>
-      <a href="book.html">Book</a>
       <a href="about.html" class="current">About</a>
       <a href="join-the-team.html">Join the Team!</a>
       <a href="book.html" class="header-cta">Book a Free Consultation</a>
@@ -41,7 +40,6 @@
 <div class="page-intro">
   <div class="container">
     <h1>About Us</h1>
-    <p>We're two sisters, born and raised in Hamilton, Montana, with a passion for keeping spaces tidy, cared for, and welcoming.</p>
   </div>
 </div>
 
@@ -49,7 +47,7 @@
   <div class="container">
     <div class="grid" style="grid-template-columns: 1.1fr 0.9fr; align-items:center;">
       <div>
-        <p>We're two sisters, born and raised in Hamilton, Montana, with a passion for keeping spaces tidy, cared for, and welcoming. Starting a cleaning business together felt like the perfect way to do what we love while helping others feel more at home in their own space. We prioritize using eco-friendly products whenever possible to care for both your home and the environment. Our mission is to offer personalized, friendly service that reflects the values of our small-town roots: honesty, care, and attention to detail.</p>
+        <p>Camas and Linnea Cratty were born and raised in Hamilton, Montana, and share a long-standing passion for creating clean, organized, and welcoming spaces. That shared passion led them to start a cleaning business together, where they focus on helping clients feel more comfortable and at home in their environments. Linnea holds a bachelor&rsquo;s degree in business/finance, while Camas holds a bachelor's in psychology and a minor in business, allowing them to combine strong organizational and operational skills with an understanding of client needs and experience. They prioritize using natural cleaning products whenever possible to support a healthier, non-toxic environment for clients, their families and pets, and themselves. Their mission is to provide personalized, reliable service rooted in their small-town values of honesty, care, and attention to detail.</p>
       </div>
       <img src="assets/images/about/camas-linnea.jpg" alt="Camas and Linnea Cratty, founders of Twin Flowers Cleaning" style="border-radius:8px;border:1px solid var(--border);">
     </div>
@@ -73,6 +71,13 @@
         <p class="author">&mdash; Joan Heusted</p>
       </div>
     </div>
+    <!--
+      Google Reviews widget (Elfsight): to replace the reviews above with live ones,
+      create a "Google Reviews" widget at https://elfsight.com, connect it to the
+      Google Business Profile, then swap the grid above for:
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-YOUR-WIDGET-ID" data-elfsight-app-lazy></div>
+    -->
   </div>
 </section>
 
@@ -80,28 +85,29 @@
   <div class="container">
     <h2 class="section-title">Photos</h2>
     <p class="section-lede">A few homes we've had the pleasure of cleaning.</p>
-    <div class="gallery">
-      <figure><img src="assets/images/about/gallery-1.png" alt="A clean, tidy Montana ranch-style living room" loading="lazy"></figure>
-      <figure><img src="assets/images/about/gallery-2.jpeg" alt="A freshly cleaned home interior" loading="lazy"></figure>
-      <figure><img src="assets/images/about/gallery-3.png" alt="A freshly cleaned home interior" loading="lazy"></figure>
-      <figure><img src="assets/images/about/gallery-4.jpg" alt="A freshly mopped tile entryway" loading="lazy"></figure>
-      <figure><img src="assets/images/about/gallery-5.png" alt="A freshly cleaned home interior" loading="lazy"></figure>
-      <figure><img src="assets/images/about/gallery-6.png" alt="A freshly cleaned home interior" loading="lazy"></figure>
+    <div class="carousel">
+      <button type="button" class="carousel-arrow carousel-arrow-left" aria-label="Previous photo">&#8249;</button>
+      <div class="carousel-viewport">
+        <ul class="carousel-track">
+          <li class="carousel-slide"><figure><img src="assets/images/about/gallery-1.jpg" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/gallery-2.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/gallery-3.jpg" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/gallery-4.jpg" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/gallery-5.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-1.png" alt="A clean, tidy Montana ranch-style living room" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-2.jpeg" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-3.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-4.jpg" alt="A freshly mopped tile entryway" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-5.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+          <li class="carousel-slide"><figure><img src="assets/images/about/main-gallery-6.png" alt="A freshly cleaned home interior" loading="lazy"></figure></li>
+        </ul>
+      </div>
+      <button type="button" class="carousel-arrow carousel-arrow-right" aria-label="Next photo">&#8250;</button>
     </div>
   </div>
 </section>
 
 <section class="alt">
-  <div class="container">
-    <h2 class="section-title">Our Service Areas</h2>
-    <p class="section-lede">Proudly serving homes in the Bitterroot Valley and Bozeman, Montana.</p>
-    <div style="max-width:900px;margin:0 auto;background:#fff;border:1px solid var(--border);border-radius:8px;padding:10px;">
-      <img src="assets/map/service-map.svg" alt="Map of Twin Flowers Cleaning's service areas: the Bitterroot Valley (Florence, Stevensville, Victor, Corvallis, Hamilton) and Bozeman, Montana" style="width:100%;height:auto;display:block;">
-    </div>
-  </div>
-</section>
-
-<section>
   <div class="container">
     <h2 class="section-title">Contact Us</h2>
     <p class="section-lede">Interested in working together? Fill out some info and we will be in touch shortly. We can't wait to hear from you! If you'd prefer to talk over the phone, leave your number in the message box and we will give you a call.</p>
@@ -198,5 +204,6 @@
     }
   });
 </script>
+<script src="js/carousel.js"></script>
 </body>
 </html>

@@ -222,7 +222,8 @@ h1, h2.section-title, .cta-band h2, .page-intro h1 {
 
 .btn {
   display: inline-block;
-  background: var(--sage);
+  font-family: inherit;
+  background: #5c5751;
   color: #fff;
   padding: 14px 30px;
   border-radius: 4px;
@@ -231,7 +232,7 @@ h1, h2.section-title, .cta-band h2, .page-intro h1 {
   border: none;
   cursor: pointer;
 }
-.btn:hover { background: var(--sage-dark); text-decoration: none; color: #fff; }
+.btn:hover { background: #45413c; text-decoration: none; color: #fff; }
 .btn-consult { background: #5c5751; }
 .btn-consult:hover { background: #45413c; }
 .btn-outline {
@@ -288,20 +289,69 @@ a.card:hover {
   transform: translateY(-2px);
 }
 
-/* Photo gallery */
-.gallery {
-  display: grid;
+/* Carousel (photos, reviews) */
+.carousel {
+  display: flex;
+  align-items: center;
   gap: 14px;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
-.gallery figure {
+.carousel-viewport {
+  overflow: hidden;
+  flex: 1;
+  min-width: 0;
+}
+.carousel-track {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.4s ease;
+}
+.carousel-slide {
+  flex: 0 0 calc((100% - 14px) / 2);
+  margin: 0;
+}
+.carousel-slide figure {
   margin: 0;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 6px;
   overflow: hidden;
 }
-.gallery img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+.carousel-slide img {
+  aspect-ratio: 776 / 1040;
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.carousel-arrow {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+.carousel-arrow:hover { background: var(--cream-dark); }
+.carousel-arrow:disabled { opacity: 0.35; cursor: default; }
+.carousel-arrow:disabled:hover { background: #fff; }
+
+@media (max-width: 640px) {
+  .carousel-slide { flex-basis: 100%; }
+  .carousel-arrow { width: 36px; height: 36px; font-size: 1.1rem; }
+}
 
 /* Testimonials */
 .testimonial {
@@ -389,7 +439,7 @@ form.inquiry button { margin-top: 20px; }
   padding-bottom: 6px;
   margin: 0 0 10px;
 }
-.checklist-grid ul { margin: 0; padding-left: 20px; color: var(--text-muted); }
+.checklist-grid ul { margin: 0; padding-left: 20px; color: #000; }
 .checklist-grid li { margin-bottom: 6px; }
 .checklist-band {
   background: var(--cream-dark);
